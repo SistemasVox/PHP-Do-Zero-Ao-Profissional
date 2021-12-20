@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<title>Mega-Sena</title>
+	</head>
+	<body>
+		<div id="titulo">Mega-Sena</div>
+		<div id="bolas">
+			<span id="bola1" class="bola">01</span>
+			<span id="bola2" class="bola">19</span>
+			<span id="bola3" class="bola">41</span>
+			<span id="bola4" class="bola">46</span>
+			<span id="bola5" class="bola">48</span>
+			<span id="bola6" class="bola">55</span>
+		</div>
+		<br>
+		<div id="infoJogo">
+			<span id="id_dez">Dezena:</span>
+			<br>
+			<span id="id_seq">Sequência:</span>
+			<br>
+			<span id="id_fim">Final:</span>
+		</div>
+		<br>
+		<button onclick="gerarRandomico()">Gerar Randômico</button>
+		<button onclick="copyClipboard()">Copiar Jogo</button>
+		<div id="tabela">
+			<table summary="Porcentagem Total">
+				<caption>Porcentagem Total</caption>
+				<tr>
+					<th>SEQ</th>
+					<th>FIM</th>
+					<th>DEZ</th>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">x > 0</td>
+				</tr>
+				<tr>
+					<td>42%</td>
+					<td>81%</td>
+					<td>96%</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">x > 1</td>
+				</tr>
+				<tr>
+					<td>7%</td>
+					<td>31%</td>
+					<td>66%</td>
+				<tr>
+					<td colspan="3" align="center">x > 2</td>
+				</tr>
+				<tr>
+					<td>0.25%</td>
+					<td>11%</td>
+					<td>32%</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">SEQ + FIM + DEZ > 0</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<b>99.22%</b>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">SEQ + FIM + DEZ > 1</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<b>94.66%</b>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">SEQ + FIM + DEZ > 2</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<b>77.65%</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
