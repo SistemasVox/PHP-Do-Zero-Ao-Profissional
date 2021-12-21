@@ -158,6 +158,22 @@ function copyClipboard() {
 
         }
     }
-    navigator.clipboard.writeText(copyText);
-    alert("Copiado");
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(copyText);
+        alert("Copiado: " + copyText);
+    } else {
+        copy(copyText);
+        alert("Copiado: " + copyText);
+    }
+}
+
+
+function copy(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    return result;
 }
